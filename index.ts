@@ -111,7 +111,7 @@ class Impfbot {
       await awaitTimeout(2000);
       await page.click(terminSuchenButtonSelector);
       await page.waitForResponse(
-        (res) => res.url().indexOf("ersttermin") !== -1,
+        (res) => res.url().indexOf("termin") !== -1,
         { timeout: 10 * 1000 }
       );
       const errorMessages = await page.$$(".alert-danger");
