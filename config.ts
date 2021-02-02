@@ -8,7 +8,7 @@ const getConfig = () => {
     },
     timeout: {
       regular: parseEnvInt("TIMEOUT_REGULAR", 300),
-      error: parseEnvInt("TIMEOUT_ERROR", 300),
+      error: parseEnvInt("TIMEOUT_ERROR", 900),
     },
     chromiumExecutablePath: process.env.CHROMIUM_EXECUTABLE_PATH,
     noPuppeteerSandbox: !!process.env.NO_PUPPETEER_SANDBOX,
